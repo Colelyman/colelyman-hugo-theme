@@ -1,0 +1,37 @@
+{
+    "contentdir": "content",
+    "layoutdir": "layouts",
+    "publishdir": "public",
+
+    "builddrafts": false,
+
+    "baseurl": "http://tummychow.github.io/lanyon-hugo/",
+    "canonifyurls": true,
+    "permalinks": {
+        "post": ":year/:month/:day/:title/",
+        "fixed": ":title/"
+    },
+
+    "pygmentsuseclasses": true,
+
+    "params": {
+        "Title": "Lanyon",
+        "Tagline": "An IndieWeb Lanyon theme for Hugo",
+        "Author": "Cole Lyman",
+        "DateForm": "Jan 2 2006",
+        "Github": {
+            "Url": "http://github.com/Colelyman/indieweb-lanyon-hugo",
+            "Head": "master"
+        },
+        "Handles": {
+            "Twitter": "colelyman",
+            "Github": "Colelyman",
+            "Email": "cole@colelyman.com"
+        },
+        "Webmention": {
+            "Domain": "http://colelyman.com/",
+            "Endpoint": "https://webmention.io/",
+            "Account": "colelyman.com"
+        }
+    }
+}
