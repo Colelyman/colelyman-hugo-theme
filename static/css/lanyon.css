@@ -367,6 +367,17 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+/* Micro page list */
+ul.micro-list {
+  list-style-type: none;
+}
+.micro-date {
+  color: #9a9a9a;
+}
+ul.micro-list li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
 
 /*
  * Pagination

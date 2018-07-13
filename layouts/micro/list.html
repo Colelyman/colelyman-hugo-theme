@@ -1,11 +1,10 @@
 {{ partial "default_head.html" . -}}
 
 <div class="post">
-  <ul id="list">
+  <ul id="list" class="micro-list">
     {{ range .Data.Pages -}}
-      <li class="post h-entry">
-        <span class="post-date dt-published">{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }} -</span>
-        <a class="post-title p-name u-url" href="{{ .Permalink }}">{{ .Title }}</a>
+      <li class="h-entry">
+        <span class="micro-date dt-published">{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }} - </span><a class="post-title p-name u-url" href="{{ .Permalink }}">{{ .Title }}</a>
         <span hidden class="p-author h-card">{{ .Site.Params.Author }}</span>
         <p class="e-content">{{ .Content }}</p>
       </li>
