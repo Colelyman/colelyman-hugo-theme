@@ -1,7 +1,7 @@
 {{ partial "default_head.html" . -}}
 
 <div class="post">
-  <ul id="list" class="micro-list">
+  <ul id="list" class="micro-list h-feed">
     {{ range .Data.Pages -}}
       <li class="h-entry">
         <span class="micro-date dt-published">{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }} - </span>
