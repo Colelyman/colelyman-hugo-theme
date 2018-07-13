@@ -5,7 +5,7 @@
     {{ range .Data.Pages -}}
       <li class="h-entry">
         <span class="micro-date dt-published">{{ .Site.Params.DateForm | default "Jan 2, 2006" | .Date.Format }} - </span>
-        <a class="post-title {{ if ne .Title "" }} p-name {{ end }} u-url" href="{{ .Permalink }}">{{if ne .Title "" }} {{ .Title }} {{ else }} # {{ end }}</a>
+        <a class="post-title {{ if ne .Title "" }} p-name {{ end }} u-url" href="{{ .Permalink | absURL }}">{{if ne .Title "" }} {{ .Title }} {{ else }} # {{ end }}</a>
         <span hidden class="p-author h-card">{{ .Site.Params.Author }}</span>
         <p class="e-content">{{ .Content }}</p>
       </li>
